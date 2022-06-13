@@ -1,3 +1,4 @@
 print("Ahoj")
 a = int(input("Jak velký je čtverec?"))
-print(a*a)
+b = (a*a)
+print('Obsah čtverce je =', b)
