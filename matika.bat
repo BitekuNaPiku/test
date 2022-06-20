@@ -1,9 +1,9 @@
 echo off
-title Pocitame prumer
+title Slovní úloha
 set /p prvni=zadej kolik jablek ma Honza : 
 set /p druhy=zadej kolik jablek ma Jarda :  
 set /p treti=zadej kolik jablek ma Pepa : 
-set /p ctvrty=zadej kolik jablek ma Jarda: 
+set /p ctvrty=zadej kolik jablek ma Kolouch: 
 set /p paty=zadej kolik jablek ma Jarmila: 
 set /a soucet=%prvni%+%druhy%+%treti%+%ctvrty%+%paty%
 set /a prumer=%soucet%/5
@@ -20,16 +20,21 @@ set /p sesty=kolik jablek ma Honza kdyz mu odebereme :
 set /a zbylo=%prvni%-%sesty%
 set /a zbylo=%zbylo%
 echo Honza ma %zbylo% jablek.
-set /p sedmy=kolik jablek ma Jarda kdyz mu pridame  : 
+set /p sedmy=kolik jablek ma Kolouch kdyz mu pridame  : 
 set /a kousek=%ctvrty%+%sedmy%
 set /a kousek=%kousek%
-echo Jarda ma %kousek% jablek.
+echo Kolouch ma %kousek% jablek.
 echo Kolik jablek mame ted?
 set /a kos=%kousek%+%zbylo%+%paty%+%treti%+%druhy%
 set /a kos=%kos%
+pause
 echo Novy pocet jablek je %kos%.
 echo O kolik se lisi novy pocet jablek od staryho poctu jablek?
 set /a popo=%soucet%-%kos%
 set /a popo=%popo%
 echo Novy soucet jablek se lisi o %popo%.
+echo Jarda zmlatil Honzu kolik ma prave Jarda?
+set /a loh=%zbylo%+%druhy%
+set /a loh=%loh%
+echo Jarda ma nyni %loh%
 pause
